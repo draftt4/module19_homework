@@ -7,7 +7,7 @@ class Items {
           console.log(`Item is rurned on`)
       }
       turnedOff() {
-          console.log(`Item is rurned off`)
+          console.log(`Item is turned off`)
       }
       consumption() {
           console.log(`This is consumption`,this.power * this.workHours,`KW`)
