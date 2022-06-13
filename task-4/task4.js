@@ -12,30 +12,31 @@ ElecricItems.prototype.turnedoff = function() {
 }
 
 ElecricItems.prototype.consumption = function() {
-    console.log( `This electrical item have consumption`, this.power * this.workhours)
+    console.log( `This electrical item have consumption`, this.power * this.workhours, `KW`)
 }
 
 
 
-let laptopLG = new ElecricItems("50", "4");
-laptopLG.year = 2021;
-laptopLG.collor = "Green";
-laptopLG.memory = "1 TB";
+let laptop = new ElecricItems("50", "4");
+laptop.model = "LG"
+laptop.year = 2021;
+laptop.collor = "Green";
+laptop.memory = "1 TB";
 
-let frige = new ElecricItems("100" , "24");
-frige.model = "Samsung";
-frige.collor = "silver";
-frige.hight = "2m";
-frige.width = "1m";
+let fridge = new ElecricItems("100" , "24");
+fridge.model = "Samsung";
+fridge.collor = "silver";
+fridge.hight = "2m";
+fridge.width = "1m";
 
 
 
 
-console.log(laptopLG);
-laptopLG.turnedOn();
-laptopLG.consumption();
+console.log(laptop);
+laptop.turnedOn();
+laptop.consumption();
 
-console.log(frige);
-frige.turnedOn();
-frige.consumption();
+console.log(fridge);
+fridge.turnedOn();
+fridge.consumption();
 
